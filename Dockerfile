@@ -12,6 +12,8 @@ RUN git clone https://github.com/holmrenser/IOGA.git
 
 ENV PATH "$HOME/IOGA/:$PATH"
 
-RUN setup_IOGA.py
+RUN cd $HOME/IOGA/
+
+RUN python ./setup_IOGA.py
 
     

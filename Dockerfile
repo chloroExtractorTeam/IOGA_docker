@@ -7,6 +7,7 @@ RUN apt install --yes \
 
 RUN apt install --yes wget python
 
+RUN pip install wget
 
 
 RUN git clone https://github.com/holmrenser/IOGA.git

@@ -6,8 +6,10 @@ RUN apt install --yes \
     git \
     wget \
     python \
-    pip
+    python3 \
+    python3-pip
 
+RUN pip3 install pip
 RUN pip install wget
 
 

@@ -9,9 +9,9 @@ RUN apt install --yes \
     python3 \
     python3-pip
 
-RUN pip3 install pip
-RUN pip install wget
-RUN pip3 install wget
+RUN pip3 install -U pip
+RUN pip install -U wget
+RUN pip3 install -U wget
 
 
 RUN git clone https://github.com/holmrenser/IOGA.git

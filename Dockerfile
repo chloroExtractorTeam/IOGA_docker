@@ -8,8 +8,8 @@ RUN apt install --yes \
 RUN apt install --yes wget python
 
 
-RUN git clone https://github.com/holmrenser/IOGA.git && \
-    cd IOGA && \
-    phyton setup_IOGA.py
+RUN git clone https://github.com/holmrenser/IOGA.git
+
+RUN cd IOGA/ && .setup_IOGA.py
 
     

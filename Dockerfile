@@ -8,11 +8,12 @@ RUN apt install --yes \
 RUN apt install --yes wget python
 
 
+
 RUN git clone https://github.com/holmrenser/IOGA.git
 
 ENV PATH "$HOME/IOGA/:$PATH"
 
-RUN cd ~/IOGA/
+RUN cd IOGA/
 
 RUN python ./setup_IOGA.py
 

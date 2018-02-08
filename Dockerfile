@@ -8,7 +8,8 @@ RUN apt install --yes \
     python \
     python3 \
     python3-pip \
-    python3-venv
+    python3-venv \
+    python2
 
 RUN pip3 install -U pip
 RUN pip install -U wget
@@ -19,6 +20,6 @@ RUN git clone https://github.com/holmrenser/IOGA.git
 ENV PATH "$HOME/IOGA/:$PATH"
 
 RUN cd IOGA/ && \
-    python3 setup_IOGA.py
+    python2 setup_IOGA.py
 
     

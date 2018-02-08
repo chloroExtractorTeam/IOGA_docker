@@ -11,7 +11,7 @@ RUN apt install --yes \
     python3-venv
 
 RUN pip3 install -U pip
-RUN pip install -U wget
+RUN pip install -U wget2
 
 
 RUN git clone https://github.com/holmrenser/IOGA.git

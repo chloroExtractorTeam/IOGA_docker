@@ -9,7 +9,6 @@ RUN apt install --yes \
     python3 \
     python3-pip \
     python3-venv \
-    python2
 
 RUN pip3 install -U pip
 RUN pip install -U wget

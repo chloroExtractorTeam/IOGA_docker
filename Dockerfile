@@ -19,9 +19,8 @@ RUN apt update && apt install -y --no-install-recommends \
 
 RUN git clone https://github.com/holmrenser/IOGA.git
 
-ENV PATH "$HOME/IOGA/:$PATH"
+ENV PATH "$HOME/IOGA:$PATH"
 
 RUN cd IOGA/ && \
     python setup_IOGA.py
-
     

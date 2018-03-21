@@ -23,4 +23,7 @@ ENV PATH "$HOME/IOGA:$PATH"
 
 RUN cd IOGA/ && \
     python setup_IOGA.py
-    
+
+VOLUME /data
+
+WORKDIR /data
